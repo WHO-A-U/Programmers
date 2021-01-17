@@ -24,8 +24,5 @@ int solution(vector<vector<int>> board)
             }
         }
     }
-
-    
-
     return answer;
 }
