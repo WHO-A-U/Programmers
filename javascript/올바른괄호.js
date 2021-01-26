@@ -1,0 +1,1 @@
+const solution = (s) => (s.split('').reduce((acc,cur)=>{if(acc<0)return 999999; return acc+(cur==="("?1:-1)},0)===0)?true:false
