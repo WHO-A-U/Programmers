@@ -1,0 +1,1 @@
+const solution = (s)=>s.split(" ").map(x=>parseInt(x)).reduce((t,x)=>{t[0]=Math.min(t[0],x);t[1]=Math.max(t[1],x);return t;},[9999999,-999999]).join(" ");
