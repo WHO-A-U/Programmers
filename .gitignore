@@ -1,1 +1,6 @@
 javascript/tempCodeRunnerFile.js
+*.exe
+*.txt
+*.json
+*.*ignore
+C++/tempCodeRunnerFile.cpp
