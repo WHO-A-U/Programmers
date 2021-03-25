@@ -1,15 +1,15 @@
+import java.util.*;
 class Solution {
     public int solution(int n) {
         int answer = 0;
-        boolean[] prime = new boolean[1000001];
-        for(int i=1;i<prime.length;i++){
-            prime[i]=true;
-        }
-        prime[1]=false;
+        boolean[] prime = new boolean[n+1];
+        Arrays.fill(prime,true);
+        prime[0]=prime[1]=false;
+    
         
-        for(int i=2;i<prime.length;i++){
+        for(int i=2;i<=n;i++){
             if(!prime[i])continue;
-            for(int j=i*2;j<prime.length;j+=i){
+            for(int j=i*2;j<=n;j+=i){
                 prime[j]=false;
             }
         }
